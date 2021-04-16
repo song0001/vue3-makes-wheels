@@ -4,6 +4,7 @@ import './index.css'
 import { createWebHashHistory, createRouter } from 'vue-router'
 import Frank from './components/Frank.vue'
 import Frank2 from './components/Frank2.vue'
+import HelloWorld from './components/HelloWorld.vue'
 const history = createWebHashHistory()
 const router = createRouter({
     history: history,
@@ -14,6 +15,10 @@ const router = createRouter({
         }, {
             path: '/frank2',
             component: Frank2
+        },
+        {
+            path: '/helloWorld',
+            component: HelloWorld
         }
     ]
 })
